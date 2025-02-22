@@ -1,0 +1,81 @@
+
+TODO:
+
+	// 1. Make workshop names a variable
+	// 2. Make neededItemCount adjustable
+	3. Make it so that the quest items get erased at the issue settlement during issue time
+	/ 4. Design investment quest (Trade skill required)
+	5. Design rebellious quest (Roguery skill required)
+	// 6. Create variables in GlobalClass in workshop quests that will make dialogs adjustable easily
+	// 7. Make it so that if the player is the lord of the settlement or the king of the realm, people close to him will kneel down when they see him
+	8. Add a fucking crown to the game
+	9. Create certain dialogs when certain events happen
+	10. Make it possible to switch between relationship notifications get logged instead of raw notifications using MCM
+	11. Refine all quests in a way that makes playing more fun
+	12. Add certain interactions to NPCs in the game, preferably with each other. Fighting, being friends, etc.
+	13. Make loving more interesting
+	14. Make it possible to have multiple wifes
+	15. Refine smithy to minimize abuse
+	16. Add workshop levels and make it possible to earn a decent income from them
+	17. Refine skills in a way that they actually do something
+	18. Adjust quests in a way that they require some certain skill levels to actually do
+	19. Adjust the world map in a way that actually makes sense
+	// 20. Make the string variables automatically available via a single method
+
+
+Brewery, which produces beer from grain.
+Velvet Weavery, which produces velvet from raw silk.
+Linen Weavery, which produces linen from flax.
+Wine Press, which produces wine from grapes.
+Olive Press, which produces oil from olives.
+Pottery Shop, which produces pottery from clay.
+Wool Weavery, which produces garments from wool.
+Tannery, which produces leather and light armors from hides.
+Wood Workshop, which produces bows, arrows and shields from hardwood.
+Smithy, which produces weapons and armor from iron ore, as well as tools from hardwood.
+Silversmith, which produces jewelery from silver ore.
+
+
+					WORKSHOPS						
+
+StringId					PRODUCING				FROM
+
+00. artisans				?						?
+01. tannery					leather												DID
+02. wood_WorkshopType								hardwood					DID
+03. linen_weavery			linen					flax						DID
+04. brewery					beer					grain						DID
+05. wine_press				wine					grape						DID
+06. olive_press				oil						olives						DID
+07. silversmithy			jewelry					silver || Silverore ?		DID
+08. pottery_shop			pottery					clay						DID
+09. smithy											iron || hardwood			DID
+10. velvet_weavery			velvet					Rawsilk						DID
+11. wool_weavery									wool						DID
+
+
+
+STRING VARIABLES
+
+QUEST_GIVER
+QUEST_SETTLEMENT
+WORKSHOP_NAME
+LORD_NAME
+ITEM_NAME
+ITEM_AMOUNT
+PLAYER
+
+
+
+
+Quest Types:
+
+	1. Workshop Delivery Quest
+	2. Investment Quest
+	3. Rebellious Quest
+
+
+
+CONCERNS:
+
+We need to recalculate the earnedGold after neededItemCount is calculated as well
